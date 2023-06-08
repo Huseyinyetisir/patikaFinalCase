@@ -3,7 +3,7 @@ package com.huseyinyetisir.WeatherApp.controller;
 import com.huseyinyetisir.WeatherApp.controller.contract.UserControllerContract;
 import com.huseyinyetisir.WeatherApp.dto.user.UserDTO;
 import com.huseyinyetisir.WeatherApp.dto.user.UserSaveRequest;
-import com.huseyinyetisir.WeatherApp.dto.user.UserUpdateRequest;
+import com.huseyinyetisir.WeatherApp.dto.user.UserUpdatePasswordRequest;
 import com.huseyinyetisir.WeatherApp.general.RestResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 @RestController
-@RequestMapping("/api/v1/customers")
+@RequestMapping("/api/v1/user")
 @RequiredArgsConstructor
 public class UserController {
 
@@ -23,6 +23,11 @@ public class UserController {
         return ResponseEntity.ok(RestResponse.of(userDTO));
     }
 
+    @GetMapping
+    public ResponseEntity<RestResponse<List<UserDTO>>> findAll(){
+        List<UserDTO> userDTOList = userControllerContract.findAll();
+        return ResponseEntity.ok(RestResponse.of(userDTOList));
+    }
 
     @GetMapping("/{id}")
     public ResponseEntity<RestResponse<UserDTO>> findById(@PathVariable Long id){
@@ -37,7 +42,7 @@ public class UserController {
     }
 
     @PutMapping("/{username}")
-    public ResponseEntity<RestResponse<UserDTO>> update(@PathVariable String username, @RequestBody UserUpdateRequest request){
+    public ResponseEntity<RestResponse<UserDTO>> update(@PathVariable String username, @RequestBody UserUpdatePasswordRequest request){
         UserDTO user = userControllerContract.update(username, request);
         return ResponseEntity.ok(RestResponse.of(user));
     }

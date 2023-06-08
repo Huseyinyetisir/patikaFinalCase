@@ -12,4 +12,6 @@ public class ItemNotFoundException extends BusinessException{
   public ItemNotFoundException(BaseErrorMessage baseErrorMessage) {
     super(baseErrorMessage);
   }
+
+
 }

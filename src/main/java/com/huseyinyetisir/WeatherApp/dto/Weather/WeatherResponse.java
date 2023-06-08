@@ -1,6 +1,5 @@
 package com.huseyinyetisir.WeatherApp.dto.Weather;
 
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.util.List;

@@ -1,6 +1,6 @@
 package com.huseyinyetisir.WeatherApp.dto.user;
 
-public record UserUpdateRequest(String username,
+public record UserUpdatePasswordRequest(
                                 String email,
                                 String password) {
 }

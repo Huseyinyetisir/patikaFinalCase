@@ -1,9 +1,11 @@
 package com.huseyinyetisir.WeatherApp.repository;
 
-import com.huseyinyetisir.WeatherApp.entity.User;
+import com.huseyinyetisir.WeatherApp.entity.AppUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface UserRepository extends JpaRepository<User,Long> {
+public interface UserRepository extends JpaRepository<AppUser,Long> {
 
-    User findUserByUsername(String username);
+    AppUser findAppUserByUsername(String username);
+
+    AppUser findAppUserByEmail(String email);
 }

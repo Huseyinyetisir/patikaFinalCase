@@ -2,7 +2,6 @@ package com.huseyinyetisir.WeatherApp.general;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 
@@ -29,11 +28,9 @@ public abstract class BaseEntityService<E extends BaseEntity, R extends JpaRepos
 
     if (entity.getId()  == null){
       baseAdditionalFields.setCreateDate(LocalDateTime.now());
-      //baseAdditionalFields.setCreatedBy(0L); // TODO: JWT olsaydı oradan alacaktık
     }
 
     baseAdditionalFields.setUpdateDate(LocalDateTime.now());
-    //baseAdditionalFields.setUpdatedBy(0L);// TODO: JWT olsaydı oradan alacaktık
 
     entity.setBaseAdditionalFields(baseAdditionalFields);
     entity = repository.save(entity);

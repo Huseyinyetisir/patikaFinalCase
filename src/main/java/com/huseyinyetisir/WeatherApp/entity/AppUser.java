@@ -5,15 +5,20 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 
-@Entity
-@Table(name = "users")
+
+@Table(name = "app_users")
 @Getter
 @Setter
-public class User extends BaseEntity {
+@Entity
+@AllArgsConstructor
+@NoArgsConstructor
+public class AppUser extends BaseEntity {
 
     @Id
     @GeneratedValue(generator = "User", strategy = GenerationType.SEQUENCE)
