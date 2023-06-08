@@ -1,6 +1,7 @@
 package com.huseyinyetisir.WeatherApp.controller;
 
 
+
 import com.huseyinyetisir.WeatherApp.dto.Weather.WeatherResponse;
 import com.huseyinyetisir.WeatherApp.service.WeatherService;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,4 +23,5 @@ public class WeatherController {
     public WeatherResponse getWeatherByCity(@PathVariable String city){
         return weatherService.getWeatherByCityFromApi(city);
     }
+
 }

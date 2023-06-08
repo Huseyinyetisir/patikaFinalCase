@@ -44,4 +44,10 @@ public class AppUser extends BaseEntity {
     @Column(name = "PASSWORD", length = 100, nullable = false)
     private String password;
 
+
+    @NotNull
+    @NotBlank
+    @Column(name = "CITY",length = 100, nullable = false)
+    private String city;
+
 }
