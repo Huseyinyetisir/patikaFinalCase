@@ -1,7 +1,7 @@
 package com.huseyinyetisir.WeatherApp.controller;
 
 
-import com.huseyinyetisir.WeatherApp.dto.WeatherResponse;
+import com.huseyinyetisir.WeatherApp.dto.Weather.WeatherResponse;
 import com.huseyinyetisir.WeatherApp.service.WeatherService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

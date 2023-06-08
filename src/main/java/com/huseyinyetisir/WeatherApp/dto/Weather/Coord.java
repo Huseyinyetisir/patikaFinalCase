@@ -1,4 +1,4 @@
-package com.huseyinyetisir.WeatherApp.dto;
+package com.huseyinyetisir.WeatherApp.dto.Weather;
 
 public record Coord(
         double lat,

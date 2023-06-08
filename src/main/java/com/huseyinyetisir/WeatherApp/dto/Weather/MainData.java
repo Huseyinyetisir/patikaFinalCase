@@ -1,4 +1,4 @@
-package com.huseyinyetisir.WeatherApp.dto;
+package com.huseyinyetisir.WeatherApp.dto.Weather;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

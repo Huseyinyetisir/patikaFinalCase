@@ -1,4 +1,4 @@
-package com.huseyinyetisir.WeatherApp.dto;
+package com.huseyinyetisir.WeatherApp.dto.Weather;
 
 import java.util.List;
 

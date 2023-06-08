@@ -3,7 +3,7 @@ package com.huseyinyetisir.WeatherApp.service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.huseyinyetisir.WeatherApp.dto.WeatherResponse;
+import com.huseyinyetisir.WeatherApp.dto.Weather.WeatherResponse;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
