@@ -5,6 +5,7 @@ import com.huseyinyetisir.WeatherApp.dto.user.UserDTO;
 import com.huseyinyetisir.WeatherApp.dto.user.UserSaveRequest;
 import com.huseyinyetisir.WeatherApp.dto.user.UserUpdatePasswordRequest;
 import com.huseyinyetisir.WeatherApp.general.RestResponse;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,6 +14,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/v1/user")
 @RequiredArgsConstructor
+@Tag(name = "User Registration Service API v1", description = "This service provides you to register and update users")
 public class UserController {
 
     private final UserControllerContract userControllerContract;
