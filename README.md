@@ -34,14 +34,7 @@ You can reach the openapi page by `http://localhost:8080/swagger-ui/index.html` 
 ## Prerequisites
 
 ---
-- Maven or Docker
----
-
-## Docker Run
-The application can be built and run by the `Docker` engine. The `Dockerfile` has multistage build, so you do not need to build and run separately.
-
-Please follow the below directions in order to build and run the application with Docker Compose;
-
+- Maven
 ---
 ## Maven Run
 To build and run the application with `Maven`, please follow the directions below;
