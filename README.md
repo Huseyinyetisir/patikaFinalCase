@@ -56,5 +56,5 @@ You can reach the swagger-ui via  `http://{HOST}:8080/swagger-ui.html`
 
 ## Screenshots
 
-![App Screenshot](https://imgur.com/a/GQDWukw)
+![App Screenshot](https://imgur.com/gallery/GQDWukw)
 
